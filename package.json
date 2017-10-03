@@ -1,0 +1,22 @@
+{
+  "name": "toyproject",
+  "version": "1.0.0",
+  "description": "a toy project for hw4-advanced software engineering class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ase-warriors/toyproject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ase-warriors/toyproject/issues"
+  },
+  "homepage": "https://github.com/ase-warriors/toyproject#readme",
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
