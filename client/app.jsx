@@ -31,7 +31,7 @@ class Home extends React.Component {
     render() {
         return (
             <div id="home-component">
-            <h1>Hello baka</h1>
+            <h1>Hello Vendor</h1>
             <Button onClick={this.addEntry}>Add Entry</Button>
             <p>{this.state.entries} entries added</p>
             </div>

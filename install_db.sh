@@ -20,7 +20,7 @@ done
 while true; do
     read -p "Create a new database? (please do so if you haven't done so)" yn
     case $yn in
-        [Yy]* ) psql -c "CREATE ROLE war superuser"; createdb warriors -U war; break;;
+        [Yy]* ) createdb warriors; break;;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
     esac
@@ -29,7 +29,7 @@ done
 while true; do
     read -p "Create a new table? (please do so if you haven't done so)" yn
     case $yn in
-        [Yy]* ) psql -U war -f create_tables.txt ; break;;
+        [Yy]* ) psql -f create_tables.txt ; break;;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
     esac
