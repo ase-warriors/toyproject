@@ -11,7 +11,6 @@ app.get('/', (req, res) => {
 
 app.get('/get', (req2, res2) => {
   dbclient.query('SELECT entry_count FROM Vendor', (err, res) => {
-    console.log(err ? err.stack : res.rows);
     const jsonreply = {
       data: res.rows.length
     };
@@ -21,7 +20,6 @@ app.get('/get', (req2, res2) => {
 
 app.post('/update', (req2, res2) => {
   dbclient.query('INSERT INTO Vendor VALUES (12)', (err, res) => {
-    console.log(err ? err.stack : res.rows);
     res2.end();
   });
 });
