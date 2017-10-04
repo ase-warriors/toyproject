@@ -4,7 +4,8 @@
   "description": "a toy project for hw4-advanced software engineering class",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./unit_test.sh",
+    "run": "node server/server.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,9 @@
   },
   "homepage": "https://github.com/ase-warriors/toyproject#readme",
   "dependencies": {
+    "d3": "^4.11.0",
     "express": "^4.16.1",
+    "pg": "^7.3.0",
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.3",
     "react-dom": "^16.0.0"
