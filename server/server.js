@@ -1,10 +1,10 @@
 const express = require('express');
-const app = express()
-const { Client } = require('pg')
+const app = express();
+const { Client } = require('pg');
 
-const dbclient = new Client()
+const dbclient = new Client();
 
-dbclient.connect()
+dbclient.connect();
 app.get('/', (req, res) => {
   res.send(index_page);
 });
@@ -28,7 +28,7 @@ app.use('/public', express.static('client/public/'));
 
 app.listen(8080, function () {
   console.log('Example app listening on port 8080!');
-})
+});
 
 const index_page = `<html>
   <head>
