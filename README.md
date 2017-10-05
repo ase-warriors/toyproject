@@ -6,6 +6,24 @@
 ## Description
 This is a toy project demonstrating the technology framework we are going to use for our final project. We added continuous integration with Travis-CI.
 
+## Building and Testing
+### Build the frontend and backend
+```bash
+npm install
+npm run-script build
+```
+
+### Run the backend
+```bash
+./install_db.sh
+npm run-script run
+```
+
+### Unit test
+```bash
+./unit_test.sh
+```
+
 ### Frontend
 * react.js
 * Bootstrap (react-bootstrap)
